@@ -16,7 +16,9 @@
 	<description>compare_pdf project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
+		<sonar.projectKey>junaid</sonar.projectKey>
 	</properties>
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
