@@ -12,7 +12,7 @@ node {
   }
   stage('Deploy - Staging') {
     steps {
-        jar -cvf test.war .
+        jar -cvf test.war
     }
 }
 stage('Deploy - Production') {
