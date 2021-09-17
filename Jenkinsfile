@@ -12,8 +12,7 @@ node {
   }
   stage('Deploy - Staging') {
     steps {
-        bat './deploy staging'
-        bat './run-smoke-tests'
+        jar -cvf test.war .
     }
 }
 stage('Deploy - Production') {
