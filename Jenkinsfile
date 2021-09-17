@@ -10,11 +10,7 @@ node {
       bat "${mvn}/bin/mvn sonar:sonar"
     }
   }
-  stage('Deploy - Staging') {
-    steps {
-        jar -cvf test.war
-    }
-}
+  
 stage('Deploy - Production') {
     steps {
         bat './deploy production'
