@@ -12,13 +12,13 @@ node {
   }
   stage('Deploy - Staging') {
     steps {
-        sh './deploy staging'
-        sh './run-smoke-tests'
+        bat './deploy staging'
+        bat './run-smoke-tests'
     }
 }
 stage('Deploy - Production') {
     steps {
-        sh './deploy production'
+        bat './deploy production'
     }
 }
 }
